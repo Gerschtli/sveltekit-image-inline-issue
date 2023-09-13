@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import exampleImageDefault from '$lib/example.png';
+	import exampleImageRaw from '$lib/example.png?raw';
+	import exampleImageUrl from '$lib/example.png?url';
+</script>
+
+<pre>{JSON.stringify({ exampleImageDefault, exampleImageRaw, exampleImageUrl }, null, 2)}</pre>
